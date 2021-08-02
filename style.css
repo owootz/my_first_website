@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: burlywood;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+.container{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: rgb(208, 70, 15);
+}
+.card{
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 35rem;
+    padding: 0rem 5rem;
+    border-radius: 30px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+.unity{
+    min-height: 35vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.unity img{
+    border-radius: 50px;
+    width: 25rem;
+    height: 20rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+.circle{
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(to right, rgba(216, 48, 42, 0.7), rgba(54, 99, 145, 0.75));
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+.info h1{
+    font-size: 3rem;
+    transition: all 0.75s ease-out;
+    display: flex;
+    flex-wrap: wrap;
+}
+.info h3{
+    font-size: 1.3rem;
+    padding: 2rem 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+.sizes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+.sizes button{
+    padding: 0.5rem 2rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+}
+.sizes button:hover{
+    background: #015;
+    color: white;
+}
+.share{
+    margin-top: 5rem;
+    transition: all 0.75s ease-out;
+}
+.share button{
+    width: 70%;
+    padding: 0rem 0rem;
+    background: #301;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+
+
+
+/*media query*/
+
+@media only screen and (max-width: 800px){
+
+	nav ul{
+		position: absolute;
+		top: 70px;
+		left: 0;
+		background: #333;
+		width: 100%;
+		overflow: hidden;
+		transition: max-height 0.5s;
+	}
+	nav ul li{
+		display: block;
+		margin-right: 50px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	nav ul li a{
+		color: #fff;
+	}
+	.menu-icon{
+		display: block;
+		cursor: pointer;
+	}
+}
+
+/*media query for less than 600 screen size*/
+@media only screen and (max-width: 600px){
+	.row{
+		text-align: center;
+	}
+	.col-2, .col-3, .col-4{
+		flex-basis: 100%;
+	}
+	.single-product .row{
+		text-align: left;
+	}
+	.single-product .col-2{
+		padding: 20px 0;
+	}
+	.single-product h1{
+		font-size: 26px;
+		line-height: 32px;
+	}
+
+	.cart-info p{
+		display: none;
+	}
+}

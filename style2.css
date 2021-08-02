@@ -1,0 +1,102 @@
+* {
+    background: burlywood;
+}
+.sizes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: all 0.75s ease-out;
+}
+.sizes button{
+    padding: 0.5rem 2rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+}
+.sizes button:hover{
+    background: #015;
+    color: white;
+}
+.small-container{
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.col-4{
+	flex-basis: 25%;
+	padding: 10px;
+	min-width: 200px;
+	margin-bottom: 50px;
+	transition: transform 0.5s;
+}
+.col-4 img{
+	width: 100%;
+}
+h4{
+	color: #000;
+	font-weight: 500;
+    text-align: center;
+    font-size: 30px;
+}
+.col-4 p{
+	font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+.col-4:hover{
+	transform: translateY(-5px);
+}
+.row-2{
+	justify-content: space-between;
+	margin: 100px auto 50px;
+}
+select{
+	border: 1px solid #ff523b;
+	padding: 5px;
+}
+select:focus{
+	outline: none;
+}
+.page-btn{
+	margin: 0 auto 80px;
+}
+.page-btn span{
+	display: inline-block;
+	border: 1px solid #ff523b;
+	margin-left: 10px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+.page-btn span:hover{
+	background: #ff523b;
+	color: #fff;
+}
+p{
+	color: #555;
+	font-weight: bold;
+}
+.container{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+    
+}
+h2 {
+	font-size: 50px;
+	font-weight: bolder;
+}
